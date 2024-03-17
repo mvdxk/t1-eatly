@@ -1,0 +1,116 @@
+.faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+    padding-left: 47px;
+    padding-bottom: 164px;
+}
+
+.faqs__title-wrapper {
+    font-family: Poppins-SemiBold, sans-serif;
+    position: relative;
+    text-align: center;
+    width: 408px;
+    margin-bottom: 95px;
+}
+
+.faqs__title {
+    margin-left: -58px;
+    font-size: 45px;
+    line-height: 120%;
+    color: #323142;
+}
+
+.faqs__title--span {
+    color: #6c5fbc;
+    padding-left: 10px;
+}
+
+.faqs__title-img {
+    position: absolute;
+    right: -37px;
+    bottom: 87px;
+}
+
+.faqs__accordion {
+    width: 100%;
+}
+
+.faqs__accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 40px;
+    height: 100px;
+    transition: all 0.5s ease;
+}
+
+.faqs__accordion-item.active {
+    height: 200px;
+}
+
+/* Акордион открыт*/
+.faqs__accordion-item.active .faqs__accordion-item-header-icon-symbol:nth-child(2) {
+    transform: rotate(0deg);
+}
+
+.faqs__accordion-item.active .faqs__accordion-item-body {
+    opacity: 1;
+}
+
+.faqs__accordion-item-header {
+    margin-top: 20px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faqs__accordion-item-header-title {
+    font-family: Poppins-SemiBold, sans-serif;
+    font-size: 22px;
+    line-height: 269%;
+    color: #323142;
+}
+
+.faqs__accordion-item-header-icon {
+    margin-top: 15px;
+    position: relative;
+    margin-right: 60px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #6c5fbc;
+    width: 30px;
+    height: 30px;
+}
+
+.faqs__accordion-item-header-icon-symbol {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: #fff;
+    width: 11px;
+    height: 1px;
+}
+
+.faqs__accordion-item-header-icon-symbol {
+    transition: all 0.5s ease;
+    transform: rotate(-90deg);
+}
+
+.faqs__accordion-item-header-icon-symbol:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.faqs__accordion-item-body {
+    padding-left: 24px;
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #686868;
+    opacity: 0;
+    transition: all 0.7s ease;
+}

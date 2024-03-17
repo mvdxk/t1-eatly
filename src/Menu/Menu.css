@@ -1,0 +1,62 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 98px;
+    padding-top: 64px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.menu--bottom {
+    padding-top: 51px;
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+    gap: 14px
+}
+
+.menu__logo-img--bottom {
+    width: 62px;
+    height: 57px;
+}
+
+.menu__logo-title {
+    font-family: Poppins-SemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #6c5fbc;
+}
+
+.menu__logo-title--bottom {
+    font-size: 28px;
+    letter-spacing: .6px;
+}
+
+.menu__links {
+    display: flex;
+    align-items: center;
+    gap: 52px
+}
+
+.menu__links--bottom {
+    margin-top: 4px;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+.menu__links-item {
+    font-family: Inter-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #606060;
+    text-decoration: none;
+
+    transition: margin-bottom .2s ease;
+}
+
+.menu__links-item:hover {
+    margin-bottom: 10px
+}

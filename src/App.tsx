@@ -1,26 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Menu from "./Menu/Menu";
+import Hero from "./Hero/Hero";
+import Download from "./Download/Download";
+import Features from './Features/Features';
+import Footer from "./Footer/Footer";
+import Purchases from "./Purchase/Purchases";
+import Reviews from "./Reviews/Reviews";
+import Restaurants from "./Restaurants/Restaurants";
+import FAQs from './FAQ/FAQs';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <div className={"container"}>
+                <Menu/>
+                <Hero/>
+            </div>
+
+            <Features/>
+
+            <div className={"container"}>
+                <Download/>
+                <Restaurants/>
+                <Purchases/>
+            </div>
+
+            <div className={"container--wrapper"}>
+                <Reviews/>
+            </div>
+
+            <div className={"container"}>
+                <FAQs/>
+            </div>
+
+            <div className={"container--grey"}>
+                <div className={"container"}>
+                    <Menu
+                        isBottom={true}
+                        lazyLoading={true}
+                    />
+                    <Footer/>
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default App;

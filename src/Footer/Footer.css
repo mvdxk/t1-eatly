@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 0 81px;
+}
+
+.footer__rights {
+    font-family: Inter-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156%;
+    color: #999;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+}
+
+.footer__block {
+    background-color: #EAEAEA;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer__block__wrapper {
+    display: flex;
+    flex-direction: column;
+}
