@@ -1,0 +1,12 @@
+.features {
+    background-position: center center;
+    background-size: cover;
+    background-image: url("./images/background.svg");
+    height: 220px;
+}
+
+.features__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

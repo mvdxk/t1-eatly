@@ -1,0 +1,35 @@
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 109px;
+    gap: 87px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.restaurants__title {
+    font-family: Poppins-SemiBold, sans-serif;
+    font-size: 45px;
+    line-height: 50%;
+    margin-left: -40px;
+    color: #323142;
+}
+
+.restaurants__title-span {
+    color: #6c5fbc;
+}
+
+.restaurants__bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 228px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .restaurants__bottom {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
